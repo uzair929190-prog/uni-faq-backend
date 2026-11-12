@@ -18,7 +18,7 @@ class Settings:
     USE_LLM = os.getenv("USE_LLM", "1") == "1"                 # "0" likho to LLM band
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")               # key sirf .env mein, code mein kabhi nahi
     GROQ_BASE_URL = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1")
-    LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-20b")
+    LLM_MODEL = os.getenv("LLM_MODEL", "openai/gpt-oss-120b")
     CANDIDATES = int(os.getenv("CANDIDATES", 25))              # embeddings ke top-N FAQs LLM ko jate hain
     # ---- baqi ----
     ADMIN_KEY = os.getenv("ADMIN_KEY", "changeme")
